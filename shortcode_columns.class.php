@@ -1,8 +1,13 @@
 <?php
 defined( 'ABSPATH' ) OR exit;
 /**
- * Plugin Name: (TBS) Columns for post content
+ * Plugin Name: (WCM) Twitter Bootstrap Columns
  * Description: Adds the <code>[column]</code> shortcode. Also adds a new TinyMCE button.
+ * Author:      Franz Josef Kaiser <wecodemore@gmail.com>
+ * Author URL:  http://unserkaiser.com
+ * Plugin URL:  https://github.com/franz-josef-kaiser/shortcode_columns
+ * License:     MIT
+ * Version:     2013-03-30.1911
  */
 
 register_activation_hook( __FILE__, array( 'TBS_Column', 'on_activation' ) );
