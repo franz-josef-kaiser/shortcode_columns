@@ -50,9 +50,9 @@ class TBS_Column
 		), $atts ) );
 
 		return sprintf(
-			'<div class="span%s">%s</div>'
-			,12 / absint( $amount )
-			,do_shortcode( $content )
+			'<div class="span%s">%s</div>',
+			12 / absint( $amount ),
+			do_shortcode( $content )
 		);
 	}
 
@@ -76,19 +76,19 @@ class TBS_Column
 		$pos = array_search( 'wp_more', $buttons );
 		if ( ! is_int( $pos ) )
 			return array_unshift(
-				 $buttons
-				,$this->button_name
+				$buttons,
+				$this->button_name
 			);
 
 		$chunks = array_chunk(
-			 $buttons
-			,$pos +1
-			,true
+			$buttons,
+			$pos +1,
+			true
 		);
 		$buttons = array_shift( $chunks );
 		array_push(
-			 $buttons
-			,$this->button_name
+			$buttons,
+			$this->button_name
 		);
 		foreach ( $chunks as $chunk )
 			$buttons = $buttons + $chunk;
